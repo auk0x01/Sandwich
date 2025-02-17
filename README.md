@@ -3,8 +3,8 @@ Sandwich is a web exploitation challenge focusing on a specific type of attack.
 
 ## Setup
 ```
-git clone https://github.com/auk0x01/sandwich.git
-cd sandwich
+git clone https://github.com/auk0x01/Sandwich.git
+cd Sandwich
 chmod 777 *
 sudo ./build-docker.sh
 ```
