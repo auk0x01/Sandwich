@@ -13,7 +13,7 @@ sudo ./build-docker.sh
 Players have to takeover admin account by exploiting specific vulnerability present and need to read contents of `flag.txt` file.
 
 ## Important Note
-Due to the nature of vulnerability demonstrated in this challenge, your exploit can take hours to finish.
+DUE TO THE NATURE OF VULNERABILITY DEMONSTRATED IN THIS CHALLENGE, YOUR EXPLOIT CAN TAKE HOURS TO FINISH.
 
 ## Solution
 If you want to see the solution of this challenge, here is the writeup: https://github.com/auk0x01/Sandwich/blob/main/Writeup/Writeup.md
