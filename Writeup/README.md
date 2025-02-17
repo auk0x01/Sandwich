@@ -1,23 +1,3 @@
-![img](assets/banner.png)
-
-<img src='assets/htb.png' style='zoom: 80%;' align=left /> <font size='10'>Sandwich</font>
-
-8<sup>th</sup> November 2024
-
-Prepared By: `auk0x01`
-
-Challenge Author(s): `auk0x01`
-
-Difficulty: <font color='orange'>Medium</font>
-
-<br><br>
-
-***NOTE : The headings with `(!)` should be necessarily included in your writeup while the ones with `(*)` are optional and should be included only if there is a need to. Of course, you can modify the content of each section accordingly. We just provide some boilerplate text.***
-
-# Synopsis (!)
-
-- Player has to takeover admin account by exploiting a chain of Insecure UUIDs and XSS.
-
 ## Description (!)
 
 - During interview in a big security company, you are given a portal to pentest. For ease, the interviewer also gave you a note.
