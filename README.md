@@ -2,13 +2,12 @@
 Sandwich is a web exploitation challenge focusing on a specific type of attack.
 
 ## Setup
-`git clone https://github.com/auk0x01/sandwich.git`
-
-`cd sandwich`
-
-`chmod 777 *`
-
-`sudo ./build-docker.sh`
+```
+git clone https://github.com/auk0x01/sandwich.git
+cd sandwich
+chmod 777 *
+sudo ./build-docker.sh
+```
 
 ## Goal
 Players have to takeover admin account by exploiting specific vulnerability present and need to read contents of `flag.txt` file.
