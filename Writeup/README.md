@@ -1,21 +1,11 @@
-## Description (!)
+## Description
 
 - During interview in a big security company, you are given a portal to pentest. For ease, the interviewer also gave you a note.
 NOTE: If exploit takes a lot of time, try to find ways how you can minimize it by analyzing the pattern.
 
-## Skills Required (!)
+# Enumeration
 
-- Knowledge of XSS attacks
-- Knowledge of Flask
-
-## Skills Learned (!)
-
-- Bypassing client-side security controls
-- Exploiting insecure UUIDs
-
-# Enumeration (!)
-
-## Analyzing the source code (*)
+## Analyzing the source code
 
 First, we take a look at the files we have in hand. 
 
@@ -46,7 +36,7 @@ import os
 
 with app.app_context():
     db.create_all()
-    admin = User('admin', 'admin@sandwich.htb', os.environ['ADMIN_PASSWORD'])
+    admin = User('admin', 'admin@sandwich', os.environ['ADMIN_PASSWORD'])
     db.session.add(admin)
     db.session.commit()
 ```
