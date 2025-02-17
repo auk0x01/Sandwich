@@ -438,7 +438,7 @@ Let's enter a basic payload which will try to reach our server.
 
 When we enter this payload and submit our contact query. We do not get any request on our server, why? When we look at the html code of `/contact`, we see the reason behind this.
 
-![img](/assets/6.png)
+![img](assets/6.png)
 
 When we submit our contact query, this `submit()` function is being called. This function first sanitizes the contents of message input box and then send a POST request with all three values (name, email and message) to `/contact` endpoint.
 
