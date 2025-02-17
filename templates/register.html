@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 mt-4 text-center">
+                <h2>Register</h2>
+                {{ msg }}
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control rounded-0" placeholder="Enter username" name="username" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control rounded-0" placeholder="Enter email" name="email" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    <input type="password" class="form-control rounded-0" placeholder="Enter password" name="password" required>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-dark rounded-0">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start fixed-bottom" style="background-color: #212529; color: #ffffff8c;">
+        <div class="text-center p-3">
+            Copyright © 2024
+        </div>
+    </footer>
+</body>
+</html>

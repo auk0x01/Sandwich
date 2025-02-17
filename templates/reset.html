@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Reset Password</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</head>
+<body>
+    <br><br><br><br><br><br><br>
+    {% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 mt-4 text-center">
+                <h2>Reset Password</h2>
+                <form action="/reset/password/{{reset_code}}" method="POST">
+                    <div class="form-group">
+                        <input type="password" class="form-control rounded-0" placeholder="Enter password" name="password">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-dark rounded-0">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    <footer class="text-center text-lg-start fixed-bottom" style="background-color: #212529; color: #ffffff8c;">
+        <div class="text-center p-3">
+            Copyright © 2024
+        </div>
+    </footer>
+</body>
+</html>

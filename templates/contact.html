@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/purify.js') }}"></script>
+</head>
+<body>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <div class=" row justify-content-center">
+            <div class="col-sm-6 mt-4 text-center">
+                <h2>Contact Us</h2>
+                {{ msg }}
+                <p>Have any questions in mind? Let us know</p>
+                <div class="form-group">
+                    <input type="text" class="form-control rounded-0" placeholder="Enter name" name="name" id="name" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control rounded-0" placeholder="Enter email" name="email" id="email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control rounded-0" placeholder="Enter message" name="msg" id="msg" required>
+                </div>
+                <br>
+                <button class="btn btn-dark rounded-0" onclick="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start fixed-bottom" style="background-color: #212529; color: #ffffff8c;">
+        <div class="text-center p-3">
+            Copyright © 2024
+        </div>
+    </footer>
+</body>
+<script>
+    function submit(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var msg = DOMPurify.sanitize(document.getElementById("msg").value); // As we are accepting HTML in message description, we need to sanitize the message so nothing malicious comes through it.
+        fetch('/contact', {
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },    
+            body: new URLSearchParams({
+                'name': name,
+                'email': email,
+                'msg': msg
+            })
+        });
+    }
+</script>
+</html>
