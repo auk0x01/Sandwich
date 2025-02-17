@@ -1,10 +1,3 @@
-## Description
-
-- During interview in a big security company, you are given a portal to pentest. For ease, the interviewer also gave you a note.
-NOTE: If exploit takes a lot of time, try to find ways how you can minimize it by analyzing the pattern.
-
-# Enumeration
-
 ## Analyzing the source code
 
 First, we take a look at the files we have in hand. 
