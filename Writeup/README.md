@@ -424,9 +424,7 @@ def resetcode():
 
 `/reset/password/<reset_code>` simply just accepts a reset code in URL. We will then be presented a form to change password. After entering password, application checks if any user in database have this reset code. If the reset code exists, the password of the user who have this reset code will be updated.
 
-# Solution (!)
-
-## Finding the vulnerability (*)
+## Finding the vulnerability
 
 Now, that we have a basic idea of how the application functions, let's discuss important things we have discovered till now. Our endgoal is to somehow change the password of `admin` user. For changing that, we will need his reset code.
 
