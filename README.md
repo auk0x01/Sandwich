@@ -1,5 +1,5 @@
 # Sandwich
-Sandwich is a web exploitation challenge focusing on a specific type of attack.
+Sandwich is a web exploitation challenge focusing on a specific type of attack in UUID generation.
 
 ## Setup
 ```
@@ -10,7 +10,7 @@ sudo ./build-docker.sh
 ```
 
 ## Goal
-Players have to takeover admin account by exploiting specific vulnerability present and need to read contents of `flag.txt` file.
+Players have to takeover admin account by exploiting a vulnerability and need to read contents of `flag.txt` file.
 
 ## Important Note
 DUE TO THE NATURE OF VULNERABILITY DEMONSTRATED IN THIS CHALLENGE, YOUR EXPLOIT CAN TAKE HOURS TO FINISH.
