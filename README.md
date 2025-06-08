@@ -16,4 +16,4 @@ Players have to takeover admin account by exploiting a vulnerability and need to
 DUE TO THE NATURE OF VULNERABILITY DEMONSTRATED IN THIS CHALLENGE, YOUR EXPLOIT CAN TAKE HOURS TO FINISH.
 
 ## Solution
-If you want to see the solution of this challenge, here is the writeup: https://github.com/auk0x01/Sandwich/blob/main/Writeup/Writeup.md
+If you want to see the solution of this challenge, here is the writeup on my blog: https://adnanullahkhan.com/posts/Sandwich-Challenge-Writeup/
